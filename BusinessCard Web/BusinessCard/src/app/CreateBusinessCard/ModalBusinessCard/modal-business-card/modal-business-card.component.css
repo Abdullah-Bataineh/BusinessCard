@@ -1,0 +1,17 @@
+.avatar {
+    width: 150px; /* Size of the circular image */
+    height: 150px;
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover; /* Maintain aspect ratio */
+    border: 2px solid #fff; /* Optional white border */
+    margin-bottom: 15px; /* Spacing below image */
+}
+.card {
+    text-align: center; /* Center text in the card */
+    background-color: #f8f9fa; /* Light background for card */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+.modal-header, .modal-footer {
+    border: none; /* Remove border for a cleaner look */
+}
