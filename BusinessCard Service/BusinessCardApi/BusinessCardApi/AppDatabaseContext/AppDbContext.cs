@@ -1,7 +1,7 @@
 ﻿using BusinessCardApi.Model;
 using Microsoft.EntityFrameworkCore;
 
-namespace BusinessCardApi.AppDbContext
+namespace BusinessCardApi.AppDatabaseContext
 {
     public class AppDbContext:DbContext
     {
