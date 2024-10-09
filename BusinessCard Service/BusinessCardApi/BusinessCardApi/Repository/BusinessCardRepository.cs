@@ -27,7 +27,7 @@ namespace BusinessCardApi.Repository
             }
         }
 
-        public async Task<IEnumerable<BusinessCard>> GetBusinessCard()
+        public async Task<IEnumerable<BusinessCard>> GetAllBusinessCard()
         {
            return await _context.BusinessCards.ToListAsync();
         }
