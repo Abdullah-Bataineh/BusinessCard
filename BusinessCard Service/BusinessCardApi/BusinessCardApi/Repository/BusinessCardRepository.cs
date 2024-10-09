@@ -14,22 +14,22 @@ namespace BusinessCardApi.Repository
 
         public async Task CreateBusinessCard(BusinessCard businessCard)
         {
-            await _context.BusinessCards.AddAsync(businessCard);
+            await _context.BusinessCard.AddAsync(businessCard);
             await _context.SaveChangesAsync();
         }
 
         public async Task DeleteBusinessCard(int id)
         {
-            var _BusinessCard=await _context.BusinessCards.FindAsync(id);
+            var _BusinessCard=await _context.BusinessCard.FindAsync(id);
             if (_BusinessCard != null) { 
-            _context.BusinessCards.Remove(_BusinessCard); 
+            _context.BusinessCard.Remove(_BusinessCard); 
               await  _context.SaveChangesAsync();
             }
         }
 
         public async Task<IEnumerable<BusinessCard>> GetAllBusinessCard()
         {
-           return await _context.BusinessCards.ToListAsync();
+           return await _context.BusinessCard.ToListAsync();
         }
     }
 }

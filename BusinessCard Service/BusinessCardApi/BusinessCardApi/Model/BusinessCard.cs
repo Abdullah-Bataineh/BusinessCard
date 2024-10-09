@@ -3,7 +3,6 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BusinessCardApi.Model
 {
-    [Table("BusinessCard")]
     public class BusinessCard
     {
         [Required]
@@ -15,7 +14,7 @@ namespace BusinessCardApi.Model
         public string gender { get; set; }
         [Required]
         [DataType(DataType.Date)]
-        public DateOnly dob { get; set; }
+        public DateTime dob { get; set; }
         [Required]
         public string email { get; set; }
         [Required]
