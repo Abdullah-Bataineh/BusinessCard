@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\model\\businesscard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\model\\businesscard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\appdbcontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\appdbcontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,10 +27,23 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "BusinessCard.cs",
+              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Model\\BusinessCard.cs",
+              "RelativeDocumentMoniker": "BusinessCardApi\\Model\\BusinessCard.cs",
+              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Model\\BusinessCard.cs",
+              "RelativeToolTip": "BusinessCardApi\\Model\\BusinessCard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T12:54:05.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardAPI\\BusinessCardApi\\AppDbContext\\AppDbContext.cs",
+              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\AppDbContext\\AppDbContext.cs",
               "RelativeDocumentMoniker": "BusinessCardApi\\AppDbContext\\AppDbContext.cs",
-              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardAPI\\BusinessCardApi\\AppDbContext\\AppDbContext.cs",
+              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\AppDbContext\\AppDbContext.cs",
               "RelativeToolTip": "BusinessCardApi\\AppDbContext\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -35,7 +52,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\appsettings.json",
               "RelativeDocumentMoniker": "BusinessCardApi\\appsettings.json",
@@ -43,8 +60,7 @@
               "RelativeToolTip": "BusinessCardApi\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-09T12:45:54.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T12:45:54.362Z"
             }
           ]
         }
