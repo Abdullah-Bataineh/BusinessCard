@@ -1,12 +1,11 @@
 ﻿using BusinessCardApi.Model;
 
-namespace BusinessCardApi.Repository
+namespace BusinessCardApi.Service
 {
-    public interface IBusinessCardRepository
+    public interface IBusinessCardService
     {
         public Task CreateBusinessCard(BusinessCard businessCard);
         public Task<IEnumerable<BusinessCard>> GetAllBusinessCard();
         public Task DeleteBusinessCard(int id);
-
     }
 }
