@@ -5,24 +5,24 @@ namespace BusinessCardApi.Model
 {
     public class BusinessCard
     {
-        [Required]
+        [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int id { get; set; }
+        public int Id { get; set; }
         [Required]
-        public string name { get; set; }
+        public string Name { get; set; }
         [Required]
-        public string gender { get; set; }
+        public string Gender { get; set; }
         [Required]
         [DataType(DataType.Date)]
-        public DateTime dob { get; set; }
+        public DateTime DOB { get; set; }
         [Required]
-        public string email { get; set; }
+        public string Email { get; set; }
         [Required]
-        public string phone { get; set; }
+        public string Phone { get; set; }
         [MaxLength(5000)]
-        public string? photo { get; set; } = null;
+        public string? Photo { get; set; } = null;
         [Required]
-        public string address { get; set; }
+        public string Address { get; set; }
 
     }
 }
