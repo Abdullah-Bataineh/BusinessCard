@@ -4,7 +4,9 @@ using BusinessCardApi.Service;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Logging.ClearProviders(); 
+builder.Logging.AddConsole();  
+builder.Logging.AddDebug();
 // Add services to the container.
 
 builder.Services.AddControllers();

@@ -1,14 +1,18 @@
-﻿using BusinessCardApi.Model;
+﻿using BusinessCardApi.Exceptions;
+using BusinessCardApi.Model;
 using BusinessCardApi.Repository;
 
 namespace BusinessCardApi.Service
 {
     public class BusinessCardService : IBusinessCardService
     {
+        private readonly ILogger<BusinessCardService> _logger;
+
         private readonly IBusinessCardRepository _businessCardRepository;
-        public BusinessCardService(IBusinessCardRepository businessCardRepository)
+        public BusinessCardService(IBusinessCardRepository businessCardRepository, ILogger<BusinessCardService> logger)
         {
             _businessCardRepository = businessCardRepository;
+            _logger = logger;
         }
 
         public async Task CreateBusinessCard(BusinessCard businessCard)
@@ -18,7 +22,8 @@ namespace BusinessCardApi.Service
                 await _businessCardRepository.CreateBusinessCard(businessCard);
             }
             catch (Exception ex) {
-                throw new Exception("Please Check Filed Model", ex);
+                _logger.LogError(ex, $"An error occurred while creating the business card for {businessCard.Name}.");
+                throw new CreateBusinessCardException("Failed to create the business card. Please check the input model."+ ex.Message);
             }
         }
 
@@ -26,11 +31,12 @@ namespace BusinessCardApi.Service
         {
             try
             {
-               await _businessCardRepository.DeleteBusinessCard(id);
+                await _businessCardRepository.DeleteBusinessCard(id);
             }
-            catch (Exception ex) 
-            { 
-            throw new NotImplementedException("Not Found id BusinessCard with delete");
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"An error occurred while deleting the business card with ID: {id}.");
+                throw new DeleteBusinessCardException($"Failed to delete the business card with ID: {id}"+ ex.Message);
             }
         }
 
@@ -42,7 +48,8 @@ namespace BusinessCardApi.Service
             }
             catch (Exception ex)
             {
-                throw new NotImplementedException("Not Found BusinessCard");
+                _logger.LogError(ex, "An error occurred while getting all business cards.");
+                throw new GetAllBusinessCardException("Failed to retrieve business BusinessCards: " + ex.Message);
             }
         }
     }

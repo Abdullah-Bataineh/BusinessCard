@@ -20,10 +20,15 @@ namespace BusinessCardApi.Repository
 
         public async Task DeleteBusinessCard(int id)
         {
-            var _BusinessCard=await _context.BusinessCard.FindAsync(id);
-            if (_BusinessCard != null) { 
-            _context.BusinessCard.Remove(_BusinessCard); 
-              await  _context.SaveChangesAsync();
+            var businessCard = await _context.BusinessCard.FindAsync(id);
+            if (businessCard != null)
+            {
+                _context.BusinessCard.Remove(businessCard);
+                await _context.SaveChangesAsync();
+            }
+            else
+            {
+                throw new Exception($"Business card with ID: {id} not found.");
             }
         }
 
