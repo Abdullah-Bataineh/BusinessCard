@@ -1,10 +1,12 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Route, Router } from '@angular/router';
 import * as $ from 'jquery';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { MessageService } from 'primeng/api';
 import { Observable } from 'rxjs';
 import { IBusinessCard } from 'src/app/Model/IBusinessCard';
 import { BCService } from 'src/app/Service/BusinessCardService/bc.service';
+import { ToastService } from 'src/app/Service/Toast/toast.service';
 @Component({
   selector: 'app-modal-business-card',
   templateUrl: './modal-business-card.component.html',
@@ -15,9 +17,10 @@ export class ModalBusinessCardComponent implements OnInit{
  @Input() modal:any;
  modalElement:any
  constructor(
-  private messageService: MessageService,
   private spinner: NgxSpinnerService,
-  private bsService:BCService)
+  private bsService:BCService,
+private route:Router,
+private toastservice:ToastService)
   {}
   ngOnInit(): void {
     
@@ -33,23 +36,23 @@ export class ModalBusinessCardComponent implements OnInit{
           if (res.status === 200&&this.modal) {
             setTimeout(() => {
               this.spinner.hide();
-              this.messageService.add({
-              severity: 'success',
-              summary: 'Successful',
-              detail: 'You have successfully created a Business Card. Thank you.',
-              life: 2000
-            });
+              this.toastservice.showToast({ 
+                severity: 'success',
+                summary: 'Successful',
+                detail: 'You have successfully created a Business Card. Thank you.',
+                life: 5000});
+              this.route.navigate(['/ViewAllBusinessCards'])
             }, 1000);
             this.modal.hide();
+           
           } else {
             setTimeout(() => {
               this.spinner.hide();
-              this.messageService.add({
+              this.toastservice.showToast({ 
                 severity: 'warn',
                 summary: 'Failed Please Try again',
                 detail: 'Please Try Again Sumbiting Form submitting.',
-              life: 2000
-            });
+              life: 5000});
             }, 1000);
             this.modal.hide();
           
@@ -57,6 +60,15 @@ export class ModalBusinessCardComponent implements OnInit{
         },
         error: (err) => {
           console.error('Error creating business card:',err);
+          setTimeout(() => {
+            this.spinner.hide();
+            this.toastservice.showToast({ 
+              severity: 'warn',
+              summary: 'Failed Please Try again',
+              detail: 'Please Try Again Sumbiting Form submitting.',
+            life: 5000});
+          }, 1000);
+          this.modal.hide();
         }
       });
     }

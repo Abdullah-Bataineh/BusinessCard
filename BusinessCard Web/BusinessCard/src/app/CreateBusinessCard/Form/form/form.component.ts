@@ -7,6 +7,7 @@ import { ImageService } from 'src/app/Service/Image/image.service';
 import { MessageService } from 'primeng/api';
 import { NgxSpinnerService } from 'ngx-spinner';
 import 'bootstrap';
+import { ToastService } from 'src/app/Service/Toast/toast.service';
 declare var $: any;
 @Component({
   selector: 'app-form',
@@ -31,8 +32,8 @@ export class FormComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private imageservice: ImageService,
-    private messageService: MessageService,
-    private spinner: NgxSpinnerService
+    private spinner: NgxSpinnerService,
+    private toastservice:ToastService
   ) { }
 
   ngOnInit(): void {
@@ -71,12 +72,7 @@ export class FormComponent implements OnInit {
         }, 1000);
       }
     } else {
-      this.messageService.add({
-        severity: 'warn',
-        summary: 'Required Fields Missing',
-        detail: 'Please fill in all required fields or check the input format before submitting.',
-        life: 5000
-      });
+      this.toastservice.showToast({severity:"warn",summary: 'Required Fields Missing',detail: 'Please fill in all required fields or check the input format before submitting.',life: 5000});
     }
   }
 
@@ -95,23 +91,20 @@ export class FormComponent implements OnInit {
 
   async handleFile(file: File) {
     if (!file.type.startsWith('image/')) {
-      this.messageService.add({
-        severity: 'error',
+      this.toastservice.showToast({  severity: 'error',
         summary: 'Invalid File Type',
         detail: 'Please upload an image file (JPG, PNG, etc.).',
-        life: 5000
-      });
+        life: 5000});
+     
       return;
     }
 
     const maxSizeInBytes = 1 * 1024 * 1024;
     if (file.size > maxSizeInBytes) {
-      this.messageService.add({
-        severity: 'warn',
+      this.toastservice.showToast({severity: 'warn',
         summary: 'File Too Large',
         detail: 'Please upload an image smaller than 1MB.',
-        life: 5000
-      });
+        life: 5000});
       return;
     }
 
@@ -119,12 +112,10 @@ export class FormComponent implements OnInit {
       this.base64Image = await this.imageservice.convertToBase64(file);
       this.BusinessCardForm?.get('photo')?.setValue(this.base64Image);
     } catch (error) {
-      this.messageService.add({
-        severity: 'warn',
+      this.toastservice.showToast({severity: 'warn',
         summary: 'Upload Photo Missing',
         detail: 'Please upload another photo.',
-        life: 5000
-      });
+        life: 5000});
     }
   }
 

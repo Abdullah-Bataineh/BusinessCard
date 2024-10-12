@@ -1,18 +1,15 @@
 import { Injectable } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { BehaviorSubject } from 'rxjs';
+import { IToast } from 'src/app/Model/IToast';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ToastService {
-
-  constructor(private messageService: MessageService) { }
-  showToastRequiredFields() {
-    this.messageService.add({
-      severity: 'warn',
-      summary: 'Required Fields Missing',
-      detail: 'Please fill in all required fields or check the input format before submitting.',
-      life: 5000,
-    });
+  private toastSource = new BehaviorSubject<IToast|null>(null);
+  toastCurrentMessage = this.toastSource.asObservable();
+  constructor() { }
+  showToast(data: IToast) {
+    this.toastSource.next(data); 
   }
 }
