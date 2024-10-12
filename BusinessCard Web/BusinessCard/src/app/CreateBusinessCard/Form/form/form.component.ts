@@ -26,6 +26,7 @@ export class FormComponent implements OnInit {
   countryListConfig: IConfig = {
     hideCode: true,
   };
+   _modal:any;
 
   constructor(
     private fb: FormBuilder,
@@ -62,18 +63,12 @@ export class FormComponent implements OnInit {
 
       const modalElement = document.getElementById('BusinessCard');
       if (modalElement) {
-        const modal = new window.bootstrap.Modal(modalElement);
+        this._modal = new window.bootstrap.Modal(modalElement);
         this.spinner.show();
         setTimeout(() => {
           this.spinner.hide();
-          this.messageService.add({
-            severity: 'success',
-            summary: 'Successful',
-            detail: 'You have successfully created a Business Card. Thank you.',
-            life: 4000
-          });
-          modal.show();
-        }, 3000);
+          this._modal.show();
+        }, 1000);
       }
     } else {
       this.messageService.add({
