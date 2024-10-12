@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { ModalBusinessCardComponent } from './CreateBusinessCard/ModalBusinessCard/modal-business-card/modal-business-card.component';
 import { CreateBusinesscardComponent } from './CreateBusinessCard/create-businesscard/create-businesscard.component';
+import { AllBusinessCardComponent } from './AllBusinessCard/all-business-card/all-business-card.component';
 
 
 
@@ -26,7 +27,8 @@ import { CreateBusinesscardComponent } from './CreateBusinessCard/create-busines
     FooterComponent,
     FormComponent,
     ModalBusinessCardComponent,
-    CreateBusinesscardComponent
+    CreateBusinesscardComponent,
+    AllBusinessCardComponent
   ],
   imports: [
     BrowserModule,

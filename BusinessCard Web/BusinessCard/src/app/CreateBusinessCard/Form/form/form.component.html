@@ -1,6 +1,4 @@
-
-  <p-toast [showTransformOptions]="'translateY(100%)'" [showTransitionOptions]="'1000ms'" [hideTransitionOptions]="'1000ms'" [showTransformOptions]="'translateX(100%)'" />
-
+<p-toast [showTransformOptions]="'translateY(100%)'" [showTransitionOptions]="'1000ms'" [hideTransitionOptions]="'1000ms'" [showTransformOptions]="'translateX(100%)'" ></p-toast>
 <div class="container form-container">
     <form [formGroup]="BusinessCardForm" *ngIf="BusinessCardForm" (ngSubmit)="onSubmit()">
       <div class="mb-3">
@@ -125,4 +123,4 @@
       </div>
     </form>
   </div>
-<app-modal-business-card [ModalBusinessCardData]="BusinessCard"></app-modal-business-card>
+<app-modal-business-card [ModalBusinessCardData]="BusinessCard" [modal]="_modal"></app-modal-business-card>

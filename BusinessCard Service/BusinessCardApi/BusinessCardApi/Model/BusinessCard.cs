@@ -19,7 +19,7 @@ namespace BusinessCardApi.Model
         public string Email { get; set; }
         [Required]
         public string Phone { get; set; }
-        [MaxLength(5000)]
+        [Column(TypeName = "VARCHAR(MAX)")]
         public string? Photo { get; set; } = null;
         [Required]
         public string Address { get; set; }
