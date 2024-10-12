@@ -16,6 +16,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { ModalBusinessCardComponent } from './CreateBusinessCard/ModalBusinessCard/modal-business-card/modal-business-card.component';
 import { CreateBusinesscardComponent } from './CreateBusinessCard/create-businesscard/create-businesscard.component';
 import { AllBusinessCardComponent } from './AllBusinessCard/all-business-card/all-business-card.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -38,7 +39,8 @@ import { AllBusinessCardComponent } from './AllBusinessCard/all-business-card/al
     ReactiveFormsModule,
     ToastModule,
     BrowserAnimationsModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    FormsModule 
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]

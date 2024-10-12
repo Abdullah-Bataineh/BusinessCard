@@ -35,6 +35,7 @@
               "node_modules/bootstrap-icons/font/bootstrap-icons.css",
               "node_modules/datatables.net-dt/css/dataTables.dataTables.css",
               "node_modules/datatables.net-dt/css/dataTables.dataTables.min.css",
+               "node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css",
               "src/styles.css"
             ],
             "scripts": [
@@ -43,7 +44,8 @@
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
               "node_modules/jquery/dist/jquery.js",
               "node_modules/datatables.net-dt/js/dataTables.dataTables.js",
-              "node_modules/datatables.net/js/dataTables.js"
+              "node_modules/datatables.net/js/dataTables.js",
+               "node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"
             ]
           },
           "configurations": {

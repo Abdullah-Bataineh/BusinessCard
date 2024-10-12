@@ -15,9 +15,10 @@ export class BCService {
     return this.http.post<any>(
       `${urls.BASEURL}${urls.BUSINESSCARDENDPOINT}`,
       body,
-      { observe: 'response' }  // This tells HttpClient to return the full response
+      { observe: 'response' }
     );
   }
-
-
+  public GetAllBusinessCards():Observable<HttpResponse<IBusinessCard>>{
+  return this.http.get<IBusinessCard>(`${urls.BASEURL}${urls.BUSINESSCARDENDPOINT}`,{ observe: 'response' })
+}
 }
