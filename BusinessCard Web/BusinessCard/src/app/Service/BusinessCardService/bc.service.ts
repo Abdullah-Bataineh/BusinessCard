@@ -18,7 +18,14 @@ export class BCService {
       { observe: 'response' }
     );
   }
+
   public GetAllBusinessCards():Observable<HttpResponse<IBusinessCard>>{
   return this.http.get<IBusinessCard>(`${urls.BASEURL}${urls.BUSINESSCARDENDPOINT}`,{ observe: 'response' })
+}
+public FileImportBusinessCard(formData: FormData):Observable<HttpResponse<IBusinessCard>>{
+  return this.http.post<IBusinessCard>(
+    `${urls.BASEURL}${urls.FILEUPLOADBUSINESSCARD}`,
+      formData,
+      { observe: 'response' })
 }
 }

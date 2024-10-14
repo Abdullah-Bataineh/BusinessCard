@@ -43,9 +43,24 @@ namespace BusinessCardApi.Repository
         public async Task<List<BusinessCard>> GetBusinessCardsFromXmlAsync(string xmlContent)
         {
             var serializer = new XmlSerializer(typeof(List<BusinessCard>), new XmlRootAttribute("BusinessCards"));
+
             using (var reader = new StringReader(xmlContent))
             {
                 var businessCards = (List<BusinessCard>)serializer.Deserialize(reader);
+                foreach (var businessCard in businessCards)
+                {
+                    foreach (var prop in typeof(BusinessCard).GetProperties(BindingFlags.Public | BindingFlags.Instance))
+                    {
+                        if (prop.PropertyType == typeof(string))
+                        {
+                            var value= (string)prop.GetValue(businessCard);
+                            if (string.IsNullOrEmpty(value))
+                            {
+                                prop.SetValue(businessCard, null);
+                            }
+                        }
+                    }
+                }
                 return await Task.FromResult(businessCards);
             }
         }
