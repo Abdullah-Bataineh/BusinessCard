@@ -18,6 +18,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddScoped<IBusinessCardRepository,BusinessCardRepository>();
 builder.Services.AddScoped<IBusinessCardService,BusinessCardService>();
+builder.Services.AddScoped<IFileUploadBusinessCardRepository,FileUploadBusinessCardRepository>();
+builder.Services.AddScoped<IBusinessCardFacade,BusinessCardFacade>();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowLocalhost4200", policy =>

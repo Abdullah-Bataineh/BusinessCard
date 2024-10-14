@@ -103,11 +103,11 @@
           
         </div>
         <div class="button-container" *ngIf="base64Image">
-          <div class="row g-0"> <!-- Use g-0 to remove gutters -->
-            <div class="col p-0"> <!-- Remove padding from columns -->
+          <div class="row g-0"> 
+            <div class="col p-0"> 
               <i class="bi bi-trash-fill click-icon" (click)="clearImage()" title="Delete Image"></i>
             </div>
-            <div class="col p-0"> <!-- Remove padding from columns -->
+            <div class="col p-0">
               <i class="bi bi-upload click-icon" (click)="fileInput.click()" title="Upload New"></i>
             </div>
           </div>
@@ -117,9 +117,10 @@
 
       <div class="d-flex justify-content-between">
         <button type="submit" class="btn btn-primary">Submit</button>
-        <button type="button" class="btn btn-secondary">Import</button>
+        <button  type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#fileImportModal">Import</button>
         <button type="reset" class="btn btn-danger" (click)="onClear()">Clear</button>
       </div>
     </form>
   </div>
 <app-modal-business-card [ModalBusinessCardData]="BusinessCard" [modal]="_modal"></app-modal-business-card>
+<app-import-business-card></app-import-business-card>

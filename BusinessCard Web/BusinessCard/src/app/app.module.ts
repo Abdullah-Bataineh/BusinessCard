@@ -17,6 +17,7 @@ import { ModalBusinessCardComponent } from './CreateBusinessCard/ModalBusinessCa
 import { CreateBusinesscardComponent } from './CreateBusinessCard/create-businesscard/create-businesscard.component';
 import { AllBusinessCardComponent } from './AllBusinessCard/all-business-card/all-business-card.component';
 import { FormsModule } from '@angular/forms';
+import { ImportBusinessCardComponent } from './CreateBusinessCard/ImportBusinessCard/import-business-card/import-business-card.component';
 
 
 
@@ -29,7 +30,8 @@ import { FormsModule } from '@angular/forms';
     FormComponent,
     ModalBusinessCardComponent,
     CreateBusinesscardComponent,
-    AllBusinessCardComponent
+    AllBusinessCardComponent,
+    ImportBusinessCardComponent
   ],
   imports: [
     BrowserModule,
