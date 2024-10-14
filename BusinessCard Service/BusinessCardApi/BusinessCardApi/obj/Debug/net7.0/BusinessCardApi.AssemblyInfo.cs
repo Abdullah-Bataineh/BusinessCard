@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BusinessCardApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+562ddac552e0b27a072c5418b5ddf434410e14c8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd02e839690c7ff752aeeb3288858d4f9fb2c3ae")]
 [assembly: System.Reflection.AssemblyProductAttribute("BusinessCardApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BusinessCardApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
