@@ -3,24 +3,72 @@
   "WorkspaceRootPath": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\model\\businesscard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\model\\businesscard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\appdatabasecontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\appdatabasecontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\repository\\exportbusinesscardfilerepository\\exportfilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\repository\\exportbusinesscardfilerepository\\exportfilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\service\\businesscardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\service\\businesscardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\repository\\fileuploadbusinesscardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\repository\\fileuploadbusinesscardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\exceptions\\createbusinesscardexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\exceptions\\createbusinesscardexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\repository\\businesscardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\repository\\businesscardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\repository\\businesscardfacade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\repository\\businesscardfacade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\controllers\\fileuploadbusinesscardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\controllers\\fileuploadbusinesscardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\model\\businesscard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\model\\businesscard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\repository\\ibusinesscardfacade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\repository\\ibusinesscardfacade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\repository\\ifileuploadbusinesscardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\repository\\ifileuploadbusinesscardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\controllers\\exportbusinesscardfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\controllers\\exportbusinesscardfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\controllers\\fileuploadbusinesscardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\controllers\\fileuploadbusinesscardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\enum\\typefile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\enum\\typefile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\service\\exportbusinesscardfileservice\\exportfileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\service\\exportbusinesscardfileservice\\exportfileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\service\\exportbusinesscardfileservice\\iexportfileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\service\\exportbusinesscardfileservice\\iexportfileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\repository\\exportbusinesscardfilerepository\\iexportfilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\repository\\exportbusinesscardfilerepository\\iexportfilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\controllers\\businesscardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,14 +83,6 @@
       "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\repository\\ibusinesscardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\repository\\ibusinesscardfacade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\repository\\ibusinesscardfacade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\exceptions\\fileuploadbusinesscardexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\exceptions\\fileuploadbusinesscardexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -55,20 +95,8 @@
       "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\service\\businesscardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\service\\businesscardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\repository\\businesscardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\repository\\businesscardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\exceptions\\deletebusinesscardexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\exceptions\\deletebusinesscardexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\exceptions\\createbusinesscardexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\exceptions\\createbusinesscardexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\exceptions\\getallbusinesscardexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -89,10 +117,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\service\\ibusinesscardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\service\\ibusinesscardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|c:\\project\\progresssoft\\businesscard project\\businesscard\\businesscard\\businesscard service\\businesscardapi\\businesscardapi\\appdatabasecontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00A1079B-A017-4C5B-B26B-705AE4AB7FAB}|BusinessCardApi\\BusinessCardApi.csproj|solutionrelative:businesscardapi\\appdatabasecontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -102,56 +126,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FileUploadBusinessCardRepository.cs",
-              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Repository\\FileUploadBusinessCardRepository.cs",
-              "RelativeDocumentMoniker": "BusinessCardApi\\Repository\\FileUploadBusinessCardRepository.cs",
-              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Repository\\FileUploadBusinessCardRepository.cs",
-              "RelativeToolTip": "BusinessCardApi\\Repository\\FileUploadBusinessCardRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T22:35:58.735Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IFileUploadBusinessCardRepository.cs",
-              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Repository\\IFileUploadBusinessCardRepository.cs",
-              "RelativeDocumentMoniker": "BusinessCardApi\\Repository\\IFileUploadBusinessCardRepository.cs",
-              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Repository\\IFileUploadBusinessCardRepository.cs",
-              "RelativeToolTip": "BusinessCardApi\\Repository\\IFileUploadBusinessCardRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T22:30:50.007Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BusinessCardController.cs",
-              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Controllers\\BusinessCardController.cs",
-              "RelativeDocumentMoniker": "BusinessCardApi\\Controllers\\BusinessCardController.cs",
-              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Controllers\\BusinessCardController.cs",
-              "RelativeToolTip": "BusinessCardApi\\Controllers\\BusinessCardController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T13:55:47.897Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "BusinessCardFacade.cs",
               "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Repository\\BusinessCardFacade.cs",
               "RelativeDocumentMoniker": "BusinessCardApi\\Repository\\BusinessCardFacade.cs",
               "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Repository\\BusinessCardFacade.cs",
               "RelativeToolTip": "BusinessCardApi\\Repository\\BusinessCardFacade.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCMAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAIwCEAAABnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T22:39:48.993Z",
               "EditorCaption": ""
@@ -159,6 +144,218 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "BusinessCardRepository.cs",
+              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Repository\\BusinessCardRepository.cs",
+              "RelativeDocumentMoniker": "BusinessCardApi\\Repository\\BusinessCardRepository.cs",
+              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Repository\\BusinessCardRepository.cs",
+              "RelativeToolTip": "BusinessCardApi\\Repository\\BusinessCardRepository.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwB8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T13:33:07.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FileUploadBusinessCardRepository.cs",
+              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Repository\\FileUploadBusinessCardRepository.cs",
+              "RelativeDocumentMoniker": "BusinessCardApi\\Repository\\FileUploadBusinessCardRepository.cs",
+              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Repository\\FileUploadBusinessCardRepository.cs",
+              "RelativeToolTip": "BusinessCardApi\\Repository\\FileUploadBusinessCardRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T22:35:58.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IBusinessCardFacade.cs",
+              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Repository\\IBusinessCardFacade.cs",
+              "RelativeDocumentMoniker": "BusinessCardApi\\Repository\\IBusinessCardFacade.cs",
+              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Repository\\IBusinessCardFacade.cs",
+              "RelativeToolTip": "BusinessCardApi\\Repository\\IBusinessCardFacade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T22:39:17.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExportFileRepository.cs",
+              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Repository\\ExportBusinessCardFileRepository\\ExportFileRepository.cs",
+              "RelativeDocumentMoniker": "BusinessCardApi\\Repository\\ExportBusinessCardFileRepository\\ExportFileRepository.cs",
+              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Repository\\ExportBusinessCardFileRepository\\ExportFileRepository.cs",
+              "RelativeToolTip": "BusinessCardApi\\Repository\\ExportBusinessCardFileRepository\\ExportFileRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T19:03:11.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\AppDatabaseContext\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "BusinessCardApi\\AppDatabaseContext\\AppDbContext.cs",
+              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\AppDatabaseContext\\AppDbContext.cs",
+              "RelativeToolTip": "BusinessCardApi\\AppDatabaseContext\\AppDbContext.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAswAkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T12:48:58.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BusinessCard.cs",
+              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Model\\BusinessCard.cs",
+              "RelativeDocumentMoniker": "BusinessCardApi\\Model\\BusinessCard.cs",
+              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Model\\BusinessCard.cs",
+              "RelativeToolTip": "BusinessCardApi\\Model\\BusinessCard.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAuwBAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T12:54:05.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateBusinessCardException.cs",
+              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Exceptions\\CreateBusinessCardException.cs",
+              "RelativeDocumentMoniker": "BusinessCardApi\\Exceptions\\CreateBusinessCardException.cs",
+              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Exceptions\\CreateBusinessCardException.cs",
+              "RelativeToolTip": "BusinessCardApi\\Exceptions\\CreateBusinessCardException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T13:26:58.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BusinessCardService.cs",
+              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Service\\BusinessCardService.cs",
+              "RelativeDocumentMoniker": "BusinessCardApi\\Service\\BusinessCardService.cs",
+              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Service\\BusinessCardService.cs",
+              "RelativeToolTip": "BusinessCardApi\\Service\\BusinessCardService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCUAAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T13:45:54.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Program.cs",
+              "RelativeDocumentMoniker": "BusinessCardApi\\Program.cs",
+              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Program.cs",
+              "RelativeToolTip": "BusinessCardApi\\Program.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAABkAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T14:02:06.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IFileUploadBusinessCardRepository.cs",
+              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Repository\\IFileUploadBusinessCardRepository.cs",
+              "RelativeDocumentMoniker": "BusinessCardApi\\Repository\\IFileUploadBusinessCardRepository.cs",
+              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Repository\\IFileUploadBusinessCardRepository.cs",
+              "RelativeToolTip": "BusinessCardApi\\Repository\\IFileUploadBusinessCardRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T22:30:50.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FileUploadBusinessCardController.cs",
+              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Controllers\\FileUploadBusinessCardController.cs",
+              "RelativeDocumentMoniker": "BusinessCardApi\\Controllers\\FileUploadBusinessCardController.cs",
+              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Controllers\\FileUploadBusinessCardController.cs",
+              "RelativeToolTip": "BusinessCardApi\\Controllers\\FileUploadBusinessCardController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T22:29:14.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TYPEFILE.cs",
+              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Enum\\TYPEFILE.cs",
+              "RelativeDocumentMoniker": "BusinessCardApi\\Enum\\TYPEFILE.cs",
+              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Enum\\TYPEFILE.cs",
+              "RelativeToolTip": "BusinessCardApi\\Enum\\TYPEFILE.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T18:55:04.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IExportFileRepository.cs",
+              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Repository\\ExportBusinessCardFileRepository\\IExportFileRepository.cs",
+              "RelativeDocumentMoniker": "BusinessCardApi\\Repository\\ExportBusinessCardFileRepository\\IExportFileRepository.cs",
+              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Repository\\ExportBusinessCardFileRepository\\IExportFileRepository.cs",
+              "RelativeToolTip": "BusinessCardApi\\Repository\\ExportBusinessCardFileRepository\\IExportFileRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T18:59:50.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IExportFileService.cs",
+              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Service\\ExportBusinessCardFileService\\IExportFileService.cs",
+              "RelativeDocumentMoniker": "BusinessCardApi\\Service\\ExportBusinessCardFileService\\IExportFileService.cs",
+              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Service\\ExportBusinessCardFileService\\IExportFileService.cs",
+              "RelativeToolTip": "BusinessCardApi\\Service\\ExportBusinessCardFileService\\IExportFileService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T19:07:42.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ExportFileService.cs",
+              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Service\\ExportBusinessCardFileService\\ExportFileService.cs",
+              "RelativeDocumentMoniker": "BusinessCardApi\\Service\\ExportBusinessCardFileService\\ExportFileService.cs",
+              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Service\\ExportBusinessCardFileService\\ExportFileService.cs",
+              "RelativeToolTip": "BusinessCardApi\\Service\\ExportBusinessCardFileService\\ExportFileService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T19:08:38.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ExportBusinessCardFile.cs",
+              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Controllers\\ExportBusinessCardFile.cs",
+              "RelativeDocumentMoniker": "BusinessCardApi\\Controllers\\ExportBusinessCardFile.cs",
+              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Controllers\\ExportBusinessCardFile.cs",
+              "RelativeToolTip": "BusinessCardApi\\Controllers\\ExportBusinessCardFile.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAIwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T19:11:23.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BusinessCardController.cs",
+              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Controllers\\BusinessCardController.cs",
+              "RelativeDocumentMoniker": "BusinessCardApi\\Controllers\\BusinessCardController.cs",
+              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Controllers\\BusinessCardController.cs",
+              "RelativeToolTip": "BusinessCardApi\\Controllers\\BusinessCardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwEAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T13:55:47.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "AppDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Migrations\\AppDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "BusinessCardApi\\Migrations\\AppDbContextModelSnapshot.cs",
@@ -166,38 +363,11 @@
               "RelativeToolTip": "BusinessCardApi\\Migrations\\AppDbContextModelSnapshot.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T21:18:35.753Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T21:18:35.753Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BusinessCard.cs",
-              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Model\\BusinessCard.cs",
-              "RelativeDocumentMoniker": "BusinessCardApi\\Model\\BusinessCard.cs",
-              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Model\\BusinessCard.cs",
-              "RelativeToolTip": "BusinessCardApi\\Model\\BusinessCard.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBYAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T12:54:05.398Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FileUploadBusinessCardController.cs",
-              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Controllers\\FileUploadBusinessCardController.cs",
-              "RelativeDocumentMoniker": "BusinessCardApi\\Controllers\\FileUploadBusinessCardController.cs",
-              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Controllers\\FileUploadBusinessCardController.cs",
-              "RelativeToolTip": "BusinessCardApi\\Controllers\\FileUploadBusinessCardController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T22:29:14.566Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 19,
               "Title": "IBusinessCardRepository.cs",
               "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Repository\\IBusinessCardRepository.cs",
               "RelativeDocumentMoniker": "BusinessCardApi\\Repository\\IBusinessCardRepository.cs",
@@ -209,31 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Program.cs",
-              "RelativeDocumentMoniker": "BusinessCardApi\\Program.cs",
-              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Program.cs",
-              "RelativeToolTip": "BusinessCardApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T14:02:06.638Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IBusinessCardFacade.cs",
-              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Repository\\IBusinessCardFacade.cs",
-              "RelativeDocumentMoniker": "BusinessCardApi\\Repository\\IBusinessCardFacade.cs",
-              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Repository\\IBusinessCardFacade.cs",
-              "RelativeToolTip": "BusinessCardApi\\Repository\\IBusinessCardFacade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T22:39:17.327Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 20,
               "Title": "FileUploadBusinessCardException.cs",
               "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Exceptions\\FileUploadBusinessCardException.cs",
               "RelativeDocumentMoniker": "BusinessCardApi\\Exceptions\\FileUploadBusinessCardException.cs",
@@ -245,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "20241010182934_ThirdCreate.cs",
               "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Migrations\\20241010182934_ThirdCreate.cs",
               "RelativeDocumentMoniker": "BusinessCardApi\\Migrations\\20241010182934_ThirdCreate.cs",
@@ -257,31 +403,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "BusinessCardService.cs",
-              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Service\\BusinessCardService.cs",
-              "RelativeDocumentMoniker": "BusinessCardApi\\Service\\BusinessCardService.cs",
-              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Service\\BusinessCardService.cs",
-              "RelativeToolTip": "BusinessCardApi\\Service\\BusinessCardService.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCUAAABrAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T13:45:54.966Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CreateBusinessCardException.cs",
-              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Exceptions\\CreateBusinessCardException.cs",
-              "RelativeDocumentMoniker": "BusinessCardApi\\Exceptions\\CreateBusinessCardException.cs",
-              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Exceptions\\CreateBusinessCardException.cs",
-              "RelativeToolTip": "BusinessCardApi\\Exceptions\\CreateBusinessCardException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T13:26:58.823Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 28,
               "Title": "IBusinessCardService.cs",
               "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Service\\IBusinessCardService.cs",
               "RelativeDocumentMoniker": "BusinessCardApi\\Service\\IBusinessCardService.cs",
@@ -293,7 +415,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 21,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\appsettings.json",
               "RelativeDocumentMoniker": "BusinessCardApi\\appsettings.json",
@@ -305,7 +427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "DeleteBusinessCardException.cs",
               "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Exceptions\\DeleteBusinessCardException.cs",
               "RelativeDocumentMoniker": "BusinessCardApi\\Exceptions\\DeleteBusinessCardException.cs",
@@ -317,7 +439,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 22,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "BusinessCardApi\\WeatherForecast.cs",
@@ -329,19 +451,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "BusinessCardRepository.cs",
-              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Repository\\BusinessCardRepository.cs",
-              "RelativeDocumentMoniker": "BusinessCardApi\\Repository\\BusinessCardRepository.cs",
-              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Repository\\BusinessCardRepository.cs",
-              "RelativeToolTip": "BusinessCardApi\\Repository\\BusinessCardRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAA+wB8AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T13:33:07.564Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "GetAllBusinessCardException.cs",
               "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Exceptions\\GetAllBusinessCardException.cs",
               "RelativeDocumentMoniker": "BusinessCardApi\\Exceptions\\GetAllBusinessCardException.cs",
@@ -353,7 +463,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "20241009145551_InitialCreate.cs",
               "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Migrations\\20241009145551_InitialCreate.cs",
               "RelativeDocumentMoniker": "BusinessCardApi\\Migrations\\20241009145551_InitialCreate.cs",
@@ -365,7 +475,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "20241009150234_SeconCreate.cs",
               "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\Migrations\\20241009150234_SeconCreate.cs",
               "RelativeDocumentMoniker": "BusinessCardApi\\Migrations\\20241009150234_SeconCreate.cs",
@@ -374,18 +484,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-10T18:29:55.978Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\AppDatabaseContext\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "BusinessCardApi\\AppDatabaseContext\\AppDbContext.cs",
-              "ToolTip": "C:\\project\\ProgressSoft\\BusinessCard Project\\BusinessCard\\BusinessCard\\BusinessCard Service\\BusinessCardApi\\BusinessCardApi\\AppDatabaseContext\\AppDbContext.cs",
-              "RelativeToolTip": "BusinessCardApi\\AppDatabaseContext\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T12:48:58.826Z"
             }
           ]
         }

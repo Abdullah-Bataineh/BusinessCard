@@ -7,61 +7,74 @@ namespace BusinessCardApi.Repository
 {
     public class FileUploadBusinessCardRepository : IFileUploadBusinessCardRepository
     {
-        public async Task<List<BusinessCard>> GetBusinessCardsFromCsvAsync(string csvContent)
+
+        public async Task<BusinessCard> GetBusinessCardsFromCsvAsync(string csvContent)
         {
             var lines = csvContent.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
-            var businessCards = new List<BusinessCard>();
-            var headers = lines[0].Split(',');
-            for (int i = 1; i < lines.Length; i++)
+            if (lines.Length < 2) // Ensure there's at least a header and one data row
             {
-                var line = lines[i].Trim();
-                if (string.IsNullOrWhiteSpace(line))
-                    continue;
-                var values = line.Split(',');
-                var businessCard = new BusinessCard();
-                for (int j = 0; j < headers.Length; j++)
-                {
-                    var propertyInfo = typeof(BusinessCard).GetProperty(headers[j].Trim(), BindingFlags.IgnoreCase | BindingFlags.Public | BindingFlags.Instance);
-                    if (propertyInfo != null)
-                    {
-                        if (propertyInfo.PropertyType == typeof(string))
-                        {
-                            propertyInfo.SetValue(businessCard, string.IsNullOrEmpty(values[j]) ? null : values[j]);
-                        }
-                        else if (propertyInfo.PropertyType == typeof(DateTime))
-                        {
-                            propertyInfo.SetValue(businessCard, DateTime.TryParse(values[j], out var date) ? date : default(DateTime));
-                        }
-                    }
-                }
-                businessCards.Add(businessCard);
+                return null; // Or throw an exception based on your preference
             }
 
-            return await Task.FromResult(businessCards);
+            var headers = lines[0].Split(',');
+            var values = lines[1].Split(','); // Read the first data line
+            var businessCard = new BusinessCard();
+
+            for (int j = 0; j < headers.Length; j++)
+            {
+                var propertyInfo = typeof(BusinessCard).GetProperty(headers[j].Trim(), BindingFlags.IgnoreCase | BindingFlags.Public | BindingFlags.Instance);
+                if (propertyInfo != null)
+                {
+                    if (propertyInfo.PropertyType == typeof(string))
+                    {
+                        propertyInfo.SetValue(businessCard, string.IsNullOrEmpty(values[j]) ? null : values[j]);
+                    }
+                    else if (propertyInfo.PropertyType == typeof(DateTime))
+                    {
+                        propertyInfo.SetValue(businessCard, DateTime.TryParse(values[j], out var date) ? date : default(DateTime));
+                    }
+                }
+            }
+
+            return await Task.FromResult(businessCard);
         }
 
-        public async Task<List<BusinessCard>> GetBusinessCardsFromXmlAsync(string xmlContent)
+        public async Task<BusinessCard> GetBusinessCardsFromXmlAsync(string xmlContent)
         {
-            var serializer = new XmlSerializer(typeof(List<BusinessCard>), new XmlRootAttribute("BusinessCards"));
+            var serializer = new XmlSerializer(typeof(BusinessCard));
 
             using (var reader = new StringReader(xmlContent))
             {
-                var businessCards = (List<BusinessCard>)serializer.Deserialize(reader);
-                foreach (var businessCard in businessCards)
+                var businessCard = (BusinessCard)serializer.Deserialize(reader);
+
+                // Post-process to replace empty strings with null
+                foreach (var prop in typeof(BusinessCard).GetProperties())
                 {
-                    foreach (var prop in typeof(BusinessCard).GetProperties(BindingFlags.Public | BindingFlags.Instance))
+                    if (prop.PropertyType == typeof(string))
                     {
-                        if (prop.PropertyType == typeof(string))
+                        var value = (string)prop.GetValue(businessCard);
+                        if (string.IsNullOrEmpty(value))
                         {
-                            var value= (string)prop.GetValue(businessCard);
-                            if (string.IsNullOrEmpty(value))
-                            {
-                                prop.SetValue(businessCard, null);
-                            }
+                            prop.SetValue(businessCard, null);
+                        }
+                    }
+                    else if (prop.PropertyType == typeof(DateOnly))
+                    {
+                        // You may need to handle DateOnly parsing here if the XML stores the date as a string
+                        var dateValue = (string)prop.GetValue(businessCard);
+                        if (DateOnly.TryParse(dateValue, out var date))
+                        {
+                            prop.SetValue(businessCard, date);
+                        }
+                        else
+                        {
+                            // Handle the case where the date format is incorrect
+                            prop.SetValue(businessCard, default(DateOnly)); // or log an error
                         }
                     }
                 }
-                return await Task.FromResult(businessCards);
+
+                return await Task.FromResult(businessCard);
             }
         }
 

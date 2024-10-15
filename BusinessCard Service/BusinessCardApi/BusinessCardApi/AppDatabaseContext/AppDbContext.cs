@@ -7,6 +7,7 @@ namespace BusinessCardApi.AppDatabaseContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options):base(options) { }   
         public DbSet<BusinessCard> BusinessCard { get; set; }
+       
 
     }
 }

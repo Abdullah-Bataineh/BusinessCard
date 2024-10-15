@@ -24,5 +24,9 @@ namespace BusinessCardApi.Model
         [Required]
         public string Address { get; set; }
 
+        public static implicit operator List<object>(BusinessCard v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

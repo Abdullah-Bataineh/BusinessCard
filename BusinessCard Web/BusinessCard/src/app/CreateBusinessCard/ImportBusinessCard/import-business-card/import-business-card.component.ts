@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgxSpinnerService} from 'ngx-spinner';
 import { BCService } from 'src/app/Service/BusinessCardService/bc.service';
 import { ToastService } from 'src/app/Service/Toast/toast.service';
 
@@ -9,8 +10,9 @@ import { ToastService } from 'src/app/Service/Toast/toast.service';
 })
 export class ImportBusinessCardComponent {
   selectedFile: File | null = null;
+  _modal:any;
 
-  constructor(private fileimportservice:BCService,private toastservice:ToastService) {}
+  constructor(private fileimportservice:BCService,private toastservice:ToastService,private spinner: NgxSpinnerService) {}
 
   onFileChange(event: Event) {
     const input = event.target as HTMLInputElement;
@@ -41,7 +43,12 @@ export class ImportBusinessCardComponent {
   }
 
   uploadFile() {
+    const modalElement = document.getElementById('BusinessCard');
+      if (modalElement) {
+        this._modal = new window.bootstrap.Modal(modalElement);
+      }
     if (this.selectedFile) {
+      this.spinner.show();
       const formData: FormData = new FormData();
       formData.append('file', this.selectedFile, this.selectedFile.name);
 
@@ -56,6 +63,8 @@ export class ImportBusinessCardComponent {
               detail: 'File uploaded successfully!',
               life: 5000,
             });
+            this.spinner.hide();
+            this._modal.hide();
           }
           },
           error: (error) => {

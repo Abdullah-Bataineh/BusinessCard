@@ -1,6 +1,9 @@
 using BusinessCardApi.AppDatabaseContext;
 using BusinessCardApi.Repository;
+using BusinessCardApi.Repository.ExportBusinessCardFileRepository;
+using BusinessCardApi.Repository.ExportBusinessCardFileRespository;
 using BusinessCardApi.Service;
+using BusinessCardApi.Service.ExportBusinessCardFileService;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,6 +23,8 @@ builder.Services.AddScoped<IBusinessCardRepository,BusinessCardRepository>();
 builder.Services.AddScoped<IBusinessCardService,BusinessCardService>();
 builder.Services.AddScoped<IFileUploadBusinessCardRepository,FileUploadBusinessCardRepository>();
 builder.Services.AddScoped<IBusinessCardFacade,BusinessCardFacade>();
+builder.Services.AddScoped<IExportFileRepository, ExportFileRepository>();
+builder.Services.AddScoped<IExportFileService, ExportFileService>();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowLocalhost4200", policy =>

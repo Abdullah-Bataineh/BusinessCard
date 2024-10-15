@@ -11,7 +11,7 @@ namespace BusinessCardApi.Repository
             _fileUploadBusinessCardRepository = fileUploadBusinessCardRepository;
         }
 
-        public async Task<List<BusinessCard>> ProcessFileAsync(IFormFile file)
+        public async Task<BusinessCard> ProcessFileAsync(IFormFile file)
         {
             if (file == null || (file.ContentType != "text/csv" && file.ContentType != "application/xml" && file.ContentType != "text/xml"))
             {
@@ -21,21 +21,23 @@ namespace BusinessCardApi.Repository
             using (var stream = new StreamReader(file.OpenReadStream()))
             {
                 var fileContent = await stream.ReadToEndAsync();
-                List<BusinessCard> data;
+                BusinessCard businessCard;
 
                 if (file.ContentType == "text/csv")
                 {
-                    data = await _fileUploadBusinessCardRepository.GetBusinessCardsFromCsvAsync(fileContent);
+                    // Process CSV and get a single BusinessCard
+                    businessCard = await _fileUploadBusinessCardRepository.GetBusinessCardsFromCsvAsync(fileContent);
                 }
-                else 
+                else
                 {
-                    data = await _fileUploadBusinessCardRepository.GetBusinessCardsFromXmlAsync(fileContent);
+                    // Process XML and get a single BusinessCard
+                    businessCard = await _fileUploadBusinessCardRepository.GetBusinessCardsFromXmlAsync(fileContent);
                 }
 
-                
-                if (data.All(d => _fileUploadBusinessCardRepository.IsValidModel(d)))
+                // Validate the processed BusinessCard
+                if (_fileUploadBusinessCardRepository.IsValidModel(businessCard))
                 {
-                    return data; 
+                    return businessCard;
                 }
                 else
                 {

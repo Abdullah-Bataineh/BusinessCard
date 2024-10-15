@@ -42,6 +42,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BusinessCardApi.Controllers.ExportBusinessCardFile",
+    "Method": "ConvertToFormat",
+    "RelativePath": "api/ExportBusinessCardFile/convert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "businessCard",
+        "Type": "BusinessCardApi.Model.BusinessCard",
+        "IsRequired": true
+      },
+      {
+        "Name": "format",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BusinessCardApi.Controllers.FileUploadBusinessCardController",
     "Method": "UploadFile",
     "RelativePath": "api/FileUploadBusinessCard/upload",
