@@ -28,7 +28,8 @@ export class FormComponent implements OnInit {
     hideCode: true,
   };
    _modal:any;
-
+   _modalImport:any;
+   receivedData: any;
   constructor(
     private fb: FormBuilder,
     private imageservice: ImageService,
@@ -39,7 +40,20 @@ export class FormComponent implements OnInit {
   ngOnInit(): void {
     this.initializeBusinessForm();
   }
-
+  handleDataFromChild(data: any) {
+    this.receivedData = data;
+    console.log("Data received from child:", this.receivedData);
+    this.BusinessCardForm?.patchValue({
+      name: this.receivedData.name,
+      gender: 'male',
+      dob: this.receivedData.dob ? new Date(this.receivedData.dob).toISOString().split('T')[0] : '',
+      email: this.receivedData.email,
+      phone: this.receivedData.phone,
+      photo: this.receivedData.photo,
+      address: this.receivedData.address
+    });
+    this.base64Image=this.receivedData.photo
+  }
   initializeBusinessForm() {
     this.BusinessCardForm = this.fb.group({
       name: ['', [Validators.required]],
@@ -158,5 +172,12 @@ export class FormComponent implements OnInit {
   onClear() {
     this.BusinessCardForm?.reset();
     this.clearImage();
+  }
+  importFile(){
+    const modalElement = document.getElementById('fileImportModal');
+    if (modalElement) {
+      this._modalImport = new window.bootstrap.Modal(modalElement);
+      this._modalImport.show();
+    }
   }
 }

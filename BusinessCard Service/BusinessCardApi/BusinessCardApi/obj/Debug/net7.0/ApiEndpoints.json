@@ -1,22 +1,6 @@
 [
   {
     "ContainingType": "BusinessCardApi.Controllers.BusinessCardController",
-    "Method": "DeleteBusinessCard",
-    "RelativePath": "{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BusinessCardApi.Controllers.BusinessCardController",
     "Method": "GetAllBusinessCards",
     "RelativePath": "api/BusinessCard",
     "HttpMethod": "GET",
@@ -36,6 +20,22 @@
       {
         "Name": "businessCard",
         "Type": "BusinessCardApi.Model.BusinessCard",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BusinessCardApi.Controllers.BusinessCardController",
+    "Method": "DeleteBusinessCard",
+    "RelativePath": "api/BusinessCard/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

@@ -3,6 +3,8 @@ import * as $ from 'jquery';
 import 'datatables.net';
 import { BCService } from 'src/app/Service/BusinessCardService/bc.service';
 import { NgxSpinnerService } from 'ngx-spinner';
+import { DateFormatPipe } from 'src/app/pipe/date-format.pipe';
+import { IBusinessCard } from 'src/app/Model/IBusinessCard';
 @Component({
   selector: 'app-all-business-card',
   templateUrl: './all-business-card.component.html',
@@ -22,7 +24,11 @@ export class AllBusinessCardComponent implements OnInit {
   years: number[] = this.generateYears();
   months: { value: number, name: string }[] = this.getMonths();
   days: number[] = [];
-constructor(private bcservice:BCService,private spinner: NgxSpinnerService){}
+  dateFormatPipe: DateFormatPipe;
+  _modaldelete:any;
+  _modalexport:any;
+  deletedatabusinesscard:IBusinessCard|undefined;
+constructor(private bcservice:BCService,private spinner: NgxSpinnerService){this.dateFormatPipe = new DateFormatPipe()}
   ngOnInit() {
     this.spinner.show();
 this.getBusinessCard();
@@ -41,7 +47,22 @@ this.getBusinessCard();
         },1000)
        }
       }
+      else{
+        setTimeout(()=>{
+          this.spinner.hide();
+  
+          },1000)
+         
+      }
     })
+  }
+  ormatDate(dateString: string): string {
+    if (!dateString) return '';
+    const date = new Date(dateString);
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
   }
 
   initializeDataTable() {    
@@ -49,7 +70,8 @@ this.getBusinessCard();
       data: this.dataBusinessCard,
       columns: [
         { data: 'name' },
-        { data: 'dob' },
+        { data: 'dob',
+          render: (data: string) => this.dateFormatPipe.transform(data) },
         { data: 'gender' },
         { data: 'email' },
         { data: 'phone' },
@@ -80,12 +102,32 @@ this.getBusinessCard();
   }
 
 
-  deleteItem(item: any) {
+  deleteItem(item: IBusinessCard) {
+    this.deletedatabusinesscard=item;
+    const modalElement = document.getElementById('DeleteBusinessCard');
+      if (modalElement) {
+        this._modaldelete = new window.bootstrap.Modal(modalElement);
+        this.spinner.show();
+        setTimeout(() => {
+          this.spinner.hide();
+          this._modaldelete.show();
+        }, 1000);
+      }
     console.log("Deleting item:", item); 
     
   }
   
-  exportItem(item: any) {
+  exportItem(item: IBusinessCard) {
+    this.deletedatabusinesscard=item;
+    const modalElement = document.getElementById('fileExportModal');
+      if (modalElement) {
+        this._modalexport = new window.bootstrap.Modal(modalElement);
+        this.spinner.show();
+        setTimeout(() => {
+          this.spinner.hide();
+          this._modalexport.show();
+        }, 1000);
+      }
     console.log("Exporting item:", item);
     
    

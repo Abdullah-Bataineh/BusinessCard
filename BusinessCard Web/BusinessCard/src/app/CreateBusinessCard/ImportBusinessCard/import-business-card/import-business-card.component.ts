@@ -1,18 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { NgxSpinnerService} from 'ngx-spinner';
 import { BCService } from 'src/app/Service/BusinessCardService/bc.service';
 import { ToastService } from 'src/app/Service/Toast/toast.service';
-
+import * as bootstrap from 'bootstrap';
 @Component({
   selector: 'app-import-business-card',
   templateUrl: './import-business-card.component.html',
   styleUrls: ['./import-business-card.component.css']
 })
-export class ImportBusinessCardComponent {
+export class ImportBusinessCardComponent implements OnInit{
+  IsmodelShow:boolean=false;
   selectedFile: File | null = null;
-  _modal:any;
+  @Input() modal:any;
+    @Output() dataImport: EventEmitter<string> = new EventEmitter<string>();
 
   constructor(private fileimportservice:BCService,private toastservice:ToastService,private spinner: NgxSpinnerService) {}
+  ngOnInit(): void {
+  }
 
   onFileChange(event: Event) {
     const input = event.target as HTMLInputElement;
@@ -43,42 +47,70 @@ export class ImportBusinessCardComponent {
   }
 
   uploadFile() {
-    const modalElement = document.getElementById('BusinessCard');
-      if (modalElement) {
-        this._modal = new window.bootstrap.Modal(modalElement);
-      }
+   
+
     if (this.selectedFile) {
       this.spinner.show();
+  
       const formData: FormData = new FormData();
       formData.append('file', this.selectedFile, this.selectedFile.name);
-
+  
       this.fileimportservice.FileImportBusinessCard(formData)
-        .subscribe({
-          next: (response: any) => {
-            if(response.sataus==200){
-            console.log('Upload successful!', response);
-            this.toastservice.showToast({
-              severity: 'success',
-              summary: 'Upload Successful',
-              detail: 'File uploaded successfully!',
-              life: 5000,
-            });
-            this.spinner.hide();
-            this._modal.hide();
-          }
+        .subscribe(
+          (response: any) => {
+            if (response.status === 200) {
+              setTimeout(()=>{
+console.log('Upload successful!', response);
+this.sendData(response.body)
+              this.toastservice.showToast({
+                severity: 'success',
+                summary: 'Upload Successful',
+                detail: 'File uploaded successfully!',
+                life: 5000,
+              });
+              this.spinner.hide();
+              this.modal.hide();
+              },2000)
+              
+            } else {
+              console.error('Upload failed with status:', response.status);
+              setTimeout(()=>{
+ this.toastservice.showToast({
+                severity: 'error',
+                summary: 'Upload Failed',
+                detail: 'Unexpected server response.',
+                life: 5000,
+              });
+              
+              this.spinner.hide();
+              this.modal.hide();
+
+              },2000)
+             
+            }
           },
-          error: (error) => {
+          (error) => {
             console.error('Upload failed!', error);
-            this.toastservice.showToast({
+            setTimeout(()=>{
+this.toastservice.showToast({
               severity: 'error',
               summary: 'Upload Failed',
               detail: 'There was an error uploading the file.',
               life: 5000,
             });
+  
+            this.spinner.hide();
+            this.modal.hide();
+
+            },2000)
+            
           }
-        });
+        );
     } else {
       alert('Please select a file to upload.');
     }
+  }
+  sendData(data:any) {
+    this.dataImport.emit(data);  // Emit the data to the parent
   }
 }

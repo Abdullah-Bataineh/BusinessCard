@@ -18,6 +18,9 @@ import { CreateBusinesscardComponent } from './CreateBusinessCard/create-busines
 import { AllBusinessCardComponent } from './AllBusinessCard/all-business-card/all-business-card.component';
 import { FormsModule } from '@angular/forms';
 import { ImportBusinessCardComponent } from './CreateBusinessCard/ImportBusinessCard/import-business-card/import-business-card.component';
+import { DateFormatPipe } from './pipe/date-format.pipe';
+import { DeleteBusinessCardComponent } from './AllBusinessCard/DeleteBusinessCard/delete-business-card/delete-business-card.component';
+import { ExportBusinessCardComponent } from './AllBusinessCard/ExportBusinessCard/export-business-card/export-business-card.component';
 
 
 
@@ -31,7 +34,10 @@ import { ImportBusinessCardComponent } from './CreateBusinessCard/ImportBusiness
     ModalBusinessCardComponent,
     CreateBusinesscardComponent,
     AllBusinessCardComponent,
-    ImportBusinessCardComponent
+    ImportBusinessCardComponent,
+    DateFormatPipe,
+    DeleteBusinessCardComponent,
+    ExportBusinessCardComponent
   ],
   imports: [
     BrowserModule,

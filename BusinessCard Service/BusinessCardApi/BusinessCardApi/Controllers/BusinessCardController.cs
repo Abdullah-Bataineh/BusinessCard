@@ -47,8 +47,7 @@ namespace BusinessCardApi.Controllers
             }
         }
 
-        [HttpDelete]
-        [Route("/{id}")]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteBusinessCard(int id)
         {
             try

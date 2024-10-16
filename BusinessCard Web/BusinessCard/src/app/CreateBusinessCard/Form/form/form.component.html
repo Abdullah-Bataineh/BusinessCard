@@ -117,10 +117,10 @@
 
       <div class="d-flex justify-content-between">
         <button type="submit" class="btn btn-primary">Submit</button>
-        <button  type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#fileImportModal">Import</button>
+        <button  type="button" class="btn btn-secondary" (click)="importFile()">Import</button>
         <button type="reset" class="btn btn-danger" (click)="onClear()">Clear</button>
       </div>
     </form>
   </div>
 <app-modal-business-card [ModalBusinessCardData]="BusinessCard" [modal]="_modal"></app-modal-business-card>
-<app-import-business-card></app-import-business-card>
+<app-import-business-card (dataImport)="handleDataFromChild($event)" [modal]="_modalImport"></app-import-business-card>
