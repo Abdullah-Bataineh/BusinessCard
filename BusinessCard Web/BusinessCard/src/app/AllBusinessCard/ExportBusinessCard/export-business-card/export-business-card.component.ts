@@ -20,7 +20,7 @@ export class ExportBusinessCardComponent {
   
     if (this.ModalBusinessCardData) {
       this.bcservice.ExportBusinessCard(this.ModalBusinessCardData, typeFile.CSV).subscribe(
-        (res: HttpResponse<ArrayBuffer>) => {
+        (res) => {
           this.downloadFile(res.body, 'business_card.csv'); // Specify your filename here
         },
         error => {
@@ -32,7 +32,7 @@ export class ExportBusinessCardComponent {
   
   private downloadFile(data: ArrayBuffer | null, fileName: string) {
     if (data) {
-      const blob = new Blob([data]); // Convert ArrayBuffer to Blob
+      const blob = new Blob([data]);
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
@@ -40,7 +40,7 @@ export class ExportBusinessCardComponent {
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
-      window.URL.revokeObjectURL(url); // Clean up the URL object
+      window.URL.revokeObjectURL(url);
     } else {
       console.error('Data is null or undefined');
     }

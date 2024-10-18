@@ -34,8 +34,8 @@ export class BCService {
     return this.http.delete<any>(`${urls.BASEURL}${urls.BUSINESSCARDENDPOINT}/${id}`, { observe: 'response' });
   }
 
-  public ExportBusinessCard(BusinessCard: IBusinessCard, TypeFile: string): Observable<HttpResponse<ArrayBuffer>> {
-    return this.http.post<ArrayBuffer>(
+  public ExportBusinessCard(BusinessCard: IBusinessCard, TypeFile: string): Observable<HttpResponse<any>> {
+    return this.http.post<any>(
       `${urls.BASEURL}${urls.EXPORTBUSINESSCARD}${TypeFile}`,
       BusinessCard,
       {
