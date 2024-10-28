@@ -1,0 +1,127 @@
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+}
+input.ng-touched.ng-invalid {
+    border-color: red;
+  }
+  
+  div span {
+    color: red;
+    font-size: 12px;
+  }
+  .error-border {
+    border: 1px solid red;
+  }
+  .upload-area {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    width: 200px;
+    height: 200px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .upload-area img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  .image-preview-box {
+    border-radius: 8px;
+    padding: 20px; 
+    text-align: center;
+    width: 200px; 
+    height: 200px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
+    overflow: hidden; 
+  }
+  
+  .responsive-image {
+    max-width: 100%; 
+    max-height: 100%; 
+    display: block;
+    object-fit: contain; 
+    border-radius: 8px; 
+  }
+ 
+  .button-container {
+    display: flex;
+    padding: 10px 0;
+  }
+  
+  .row {
+    margin: 1; 
+  }
+  
+  .click-icon {
+    font-size: 24px; 
+    cursor: pointer; 
+    transition: color 0.3s; 
+  }
+  
+  .click-icon:hover {
+    color: #007bff;
+  }
+  .form-container {
+    margin-top: 20px; 
+}
+
+.border {
+    border: 1px solid #ced4da; 
+    background-color: #f8f9fa; 
+}
+
+.image-preview-box {
+    margin-top: 10px; 
+}
+
+.upload-area {
+    border: 2px dashed #007bff; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+.click-icon {
+    font-size: 1.5rem; 
+    cursor: pointer; 
+}
+
+.button-container {
+    margin-top: 10px; 
+}
+
+.btn {
+    flex: 1; 
+    margin: 0 5px; 
+}
+.form-container {
+  background-color: #f8f9fa; 
+  border: 1px solid #dee2e6; 
+  border-radius: 8px;
+  padding: 20px; 
+}
+
+.input-group-text {
+  background-color: #9d9e9f;
+  border: none; 
+  color: white; 
+}
+
+.input-group-text:hover {
+  background-color:#656666; 
+}
+
+.input-group-text i {
+  color: white; 
+}
+

@@ -1,0 +1,67 @@
+tbody, td, tfoot, th, thead, tr {
+    border-width: 0.5px !important; 
+    border-style: ridge !important; 
+    border-color: #dee2e6 !important;
+    border-left: none !important; 
+    border-right: none !important; 
+}
+
+.p-paginator .p-paginator-page.p-highlight {
+    border-radius: 50% !important;
+    padding: 0.5rem !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-with-clear {
+    position: relative;
+    display: inline-block; /* يتيح التحكم في العرض */
+}
+
+input[type="text"] {
+    padding-right: 40px;
+    border: 1px solid #ced4da; 
+    border-radius: 5px; 
+    width: 100%; 
+}
+
+.clear-input-btn {
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent; 
+    cursor: pointer;
+    color: #999;
+    font-weight: bold;
+    font-size: 16px; 
+    padding: 0;
+    margin-left: 8px; 
+    transition: color 0.3s ease; 
+}
+
+input[type="text"]:focus + .clear-input-btn {
+    color: #000; 
+}
+
+.clear-input-btn {
+    display: inline-block; 
+}
+
+input[type="text"]:not(:placeholder-shown) + .clear-input-btn {
+    display: inline-block; 
+}
+
+.custom-button {
+    padding: 2px 4px !important; 
+    font-size: 0.65rem !important;
+    height: 20px !important; 
+    min-width: 20px !important; 
+    line-height: 1 !important; 
+}
+
+.container ol, .container ul {
+    padding-left: 0rem !important;
+}

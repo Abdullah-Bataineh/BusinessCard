@@ -1,0 +1,164 @@
+<div class="row">
+  <div class="col-md-12 text-center">
+    <h1 class="display-4">All Business Cards</h1>
+    <p class="lead">Browse and manage all your business cards in one place effortlessly.</p>
+  </div>
+</div>
+<div class="container card" style="padding: inherit;" >
+  <div>
+    <p-table 
+    styleClass="p-table-gridline"
+      [value]="dataBusinessCard"
+      [paginator]="true"
+      [rowHover]="true"
+      [rows]="rowsPerPage"
+      [first]="first"
+      [totalRecords]="totalRecords"
+      [lazy]="true"
+      (onLazyLoad)="loadData($event)"  
+      [rowsPerPageOptions]="[5,10, 25, 50]"
+      [showCurrentPageReport]="true"
+      currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" 
+      columnResizeMode="expand"   sortMode="multiple" 
+      styleClass="p-table-gridline"
+      sortMode="multiple"
+    >
+    <ng-template pTemplate="header">
+      <tr>
+          <th>Photo
+            <br>
+          </th>
+          
+          <th>
+            Name 
+           
+          </th>
+          <th>
+            DOB 
+          
+      </th>
+          <th>Gender
+            
+          </th>
+          <th>Email
+          </th>
+          <th>Phone
+          </th>
+          <th>Address
+          </th>
+          <th>Actions
+          
+          </th>
+      </tr>
+        <tr>
+    <th></th>
+    <th>
+        <div class="input-with-clear">
+            <input type="text" placeholder="Search Name" [(ngModel)]="searchText" class="w-100" />
+            <button *ngIf="searchText" (click)="searchText = ''" class="clear-input-btn">x</button>
+        </div>
+    </th>
+    <th>
+        <div class="dropdown-container d-flex">
+            <select [(ngModel)]="selectedYear" (change)="onYearChange()" class="me-2">
+                <option value="">Year</option>
+                <option *ngFor="let year of years" [value]="year">{{ year }}</option>
+            </select>
+            <select *ngIf="selectedYear" [(ngModel)]="selectedMonth" (change)="onMonthChange()" class="me-2">
+                <option value="">Month</option>
+                <option *ngFor="let month of months" [value]="month.value">{{ month.name }}</option>
+            </select>
+            <select *ngIf="selectedMonth" [(ngModel)]="selectedDay">
+                <option value="">Day</option>
+                <option *ngFor="let day of days" [value]="day">{{ day }}</option>
+            </select>
+        </div>
+    </th>
+    <th>
+        <div class="input-with-clear">
+            <select [(ngModel)]="genderFilter" class="w-100">
+                <option value="">All</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+    </th>
+    <th>
+        <div class="input-with-clear">
+            <input type="text" placeholder="Search Email" [(ngModel)]="emailFilter" class="w-100" />
+            <button *ngIf="emailFilter" (click)="emailFilter = ''" class="clear-input-btn">x</button>
+        </div>
+    </th>
+    <th>
+        <div class="input-with-clear">
+            <input type="text" placeholder="Search Phone" [(ngModel)]="phoneFilter" class="w-100" />
+            <button *ngIf="phoneFilter" (click)="phoneFilter = ''" class="clear-input-btn">x</button>
+        </div>
+    </th>
+    <th>
+        <div class="input-with-clear">
+            <input type="text" placeholder="Search Address" [(ngModel)]="addressFilter" class="w-100" />
+            <button *ngIf="addressFilter" (click)="addressFilter = ''" class="clear-input-btn">x</button>
+        </div>
+    </th>
+    <th>
+        <div class="d-flex">
+          <button pButton 
+          *ngIf="searchText || selectedYear || genderFilter || emailFilter || phoneFilter || addressFilter" 
+          type="button" 
+          (click)="filterTable()" 
+          icon="pi pi-search" 
+          styleClass="p-button-rounded p-button-sm p-button-info custom-button"></button>
+  
+          <button 
+          class="ml-2" 
+          pButton 
+          *ngIf="showClearFiltter" 
+          type="button" 
+          (click)="clearFilter()"  
+          icon="pi pi-times"  
+          styleClass="p-button-rounded p-button-sm custom-button" 
+          style="background-color: red; border: none;"> 
+        </button>
+        </div>
+    </th>
+</tr>
+    
+  </ng-template>
+  
+
+      <ng-template pTemplate="body" let-rowData>
+        <tr>
+          <td>
+            <img 
+                [src]="rowData.photo ? rowData.photo : defaultPhoto" 
+                alt="Photo" 
+                style="width: 70px; height: 70px; cursor: pointer; border-radius: 50%; object-fit: cover;" 
+                onerror="this.src='path_to_default_image';"
+            />
+        </td>
+          <td>{{ rowData.name }}</td>
+          <td>{{dateFormatPipe.transform(rowData.dob)}}</td>
+          <td>{{ rowData.gender }}</td>
+          <td>{{ rowData.email }}</td>
+          <td>{{ rowData.phone }}</td>
+          <td>{{ rowData.address }}</td>
+          <td>
+            <div style="display: flex; gap: 8px;">
+              <button pButton type="button" icon="pi pi-pencil" styleClass="p-button-rounded p-button-sm p-button-info" (click)="editItem(rowData.id)"></button>
+              <button pButton type="button" icon="pi pi-trash" styleClass="p-button-rounded p-button-sm p-button-danger" (click)="deleteItem(rowData.id)"></button>
+              <button pButton type="button" icon="pi pi-download" styleClass="p-button-rounded p-button-sm p-button-success" (click)="exportItem(rowData.id)"></button>
+          </div>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+ 
+ 
+</div> 
+    
+
+<app-delete-business-card [ModalDeleteBusinessCardData]="deletedatabusinesscard" [modal]="_modaldelete" (rowDelete)="deleteRowTable()"></app-delete-business-card>
+<app-export-business-card [ModalExportBusinessCardData]="exportbusinesscard" [modal]="_modalexport"></app-export-business-card>
+<app-edit-business-card [ModalEditBusinessCardData]="editbusinesscard" [modal]="_modaledit" (rowUpdate)="UpdateRowTable()"></app-edit-business-card>

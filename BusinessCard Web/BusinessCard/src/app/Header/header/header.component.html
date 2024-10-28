@@ -1,0 +1,34 @@
+<header class="bg-dark text-white py-3" style="margin-bottom: -20px;">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a href="/" class="navbar-brand logo-link">
+        <div class="logo-container">
+          <img src="../../../assets/image/logo.png" alt="Your Logo" class="logo-image" />
+        </div>
+      </a>
+     
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        (click)="toggleNavbar()" 
+        aria-controls="navbarNav" 
+        [attr.aria-expanded]="isNavbarOpen" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" [ngClass]="{'show': isNavbarOpen}" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/" aria-current="page" [ngClass]="{'active': isActive('/')}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/CreateBusinessCard" [ngClass]="{'active': isActive('/CreateBusinessCard')}">Create Business Card</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/ViewAllBusinessCards" [ngClass]="{'active': isActive('/ViewAllBusinessCards')}">View All Business Cards</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>   

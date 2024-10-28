@@ -1,0 +1,110 @@
+<div class="container form-container">
+  <form [formGroup]="BusinessCardForm" *ngIf="BusinessCardForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="name" class="form-label"><span>*</span>Name</label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="bi bi-person"></i></span>
+        <input type="text" class="form-control" formControlName="name" id="name" placeholder="Enter your name">
+      </div>
+      <div *ngIf="isInvalid('name')">
+        <span *ngIf="BusinessCardForm.get('name')?.hasError('required')">Name is required.</span>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="gender" class="form-label"><span>*</span>Gender</label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="bi bi-gender-ambiguous"></i></span>
+        <select class="form-select" id="gender" formControlName="gender">
+          <option value="">Select gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <div *ngIf="isInvalid('gender')">
+        <span *ngIf="BusinessCardForm.get('gender')?.hasError('required')">Gender is required.</span>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="birthdate" class="form-label"><span>*</span>Date of Birth</label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="bi bi-calendar"></i></span>
+        <input 
+        type="date" 
+        formControlName="dob" 
+        class="form-control" 
+        id="dob" 
+        [min]="minDate" 
+        [max]="maxDate">
+            </div>
+      <div *ngIf="isInvalid('dob')">
+        <span *ngIf="BusinessCardForm.get('dob')?.hasError('required')">Date Of Birth is required.</span>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label"><span>*</span>Email</label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+        <input type="email" formControlName="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+      <div *ngIf="isInvalid('email')">
+        <span *ngIf="BusinessCardForm.get('email')?.hasError('required')">Email is required.</span>
+        <span *ngIf="BusinessCardForm.get('email')?.hasError('email')">Please enter a valid email.</span>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="phone" class="form-label"><span>*</span>Phone Number</label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+        <input type="tel" formControlName="phone" class="form-control" id="phone" placeholder="Enter your phone number">
+      </div>
+      <div *ngIf="isInvalid('phone')">
+        <span *ngIf="BusinessCardForm.get('phone')?.hasError('required')">Phone Number is required.</span>
+        <span *ngIf="BusinessCardForm.get('phone')?.errors?.['minlength']">Please Add Phone Number Success</span>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="address" class="form-label"><span>*</span>Address</label>
+      <textarea formControlName="address" class="form-control" id="address" rows="3" placeholder="Enter your address"></textarea>
+      <div *ngIf="isInvalid('address')">
+        <span *ngIf="BusinessCardForm.get('address')?.hasError('required')">Address is required.</span>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="photo" class="form-label">Photo Upload (optional)</label>
+      <div class="upload-area" (click)="fileInput.click()" (change)="onFileChange($event)" (dragover)="onDragOver($event)" (dragleave)="onDragLeave($event)" (drop)="onDrop($event)" style="cursor: pointer;">
+        <input type="file" id="photo" accept="image/*" #fileInput style="display: none;">
+        <div class="image-preview-box" *ngIf="base64Image; else uploadPrompt">
+          <img [src]="base64Image" alt="Uploaded Image" class="responsive-image" />
+        </div>
+        <ng-template #uploadPrompt>
+          <p>Upload Image Or Drag</p>
+        </ng-template>
+      </div>
+      <div class="button-container" *ngIf="base64Image">
+        <div class="row g-0">
+          <div class="col p-0">
+            <i class="bi bi-trash-fill click-icon" (click)="clearImage()" title="Delete Image"></i>
+          </div>
+          <div class="col p-0">
+            <i class="bi bi-upload click-icon" (click)="fileInput.click()" title="Upload New"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-between">
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="button" class="btn btn-secondary" (click)="importFile()">Import</button>
+      <button type="reset" class="btn btn-danger" (click)="onClear()">Clear</button>
+    </div>
+  </form>
+</div>
+
+<app-modal-business-card [ModalBusinessCardData]="BusinessCard" [modal]="_modal"></app-modal-business-card>
+<app-import-business-card (dataImport)="handleDataFromChild($event)" [modal]="_modalImport"></app-import-business-card>

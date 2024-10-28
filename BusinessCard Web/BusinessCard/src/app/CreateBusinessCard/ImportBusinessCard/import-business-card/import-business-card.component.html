@@ -1,0 +1,35 @@
+<div class="modal fade" id="fileImportModal" tabindex="-1" aria-labelledby="fileImportModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="fileImportModalLabel">{{ isScanning ? 'Scan QR Code' : 'Upload File' }}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ng-container *ngIf="!isScanning; else qrCodeScanner">
+          <div class="mb-3">
+            <label for="fileInput" class="form-label">Select a file to upload</label>
+            <input type="file" id="fileInput" class="form-control" accept=".csv, .xml , .jpeg, .png" (change)="onFileChange($event)" />
+            <div class="form-text">You can upload files of type (.csv, .xml, QrCode Image) only.</div>
+          </div>
+        </ng-container>
+
+        <ng-template #qrCodeScanner>
+          <div class="scanner-container">
+            <zxing-scanner (scanSuccess)="handleQrCodeCaptured($event)" 
+                           [device]="device" 
+                           [torch]="torch" 
+                           [formats]="formats"> 
+            </zxing-scanner>
+            <div class="qr-focus-area" [ngClass]="{'active': true}"></div>
+          </div>
+          <canvas #canvasElement style="display:none;"></canvas> 
+        </ng-template>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="toggleScanMode()">{{ isScanning ? 'Back to Upload' : 'Scan QR Code' }}</button>
+        <button type="button" class="btn btn-primary" (click)="!isScanning && uploadFile()" [disabled]="isScanning">Import File</button>
+      </div>
+    </div>
+  </div>
+</div>

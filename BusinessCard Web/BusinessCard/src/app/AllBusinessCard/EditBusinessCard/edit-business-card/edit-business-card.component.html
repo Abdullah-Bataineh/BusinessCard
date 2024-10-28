@@ -1,0 +1,151 @@
+<div class="modal fade" id="EditBusinessCard" tabindex="-1" aria-labelledby="BusinessCardLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="BusinessCardLabel">Edit Business Card</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="card">
+                  <div class="card-body">
+                      <div>
+                          <form [formGroup]="BusinessCardEditForm" *ngIf="BusinessCardEditForm" (ngSubmit)="onSubmit()">
+                              <div class="row">
+                                  <!-- Column for the image upload -->
+                                  <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
+                                      <div class="upload-area" (click)="fileInput.click()" (change)="onFileChange($event)" (dragover)="onDragOver($event)" (dragleave)="onDragLeave($event)" (drop)="onDrop($event)">
+                                          <input type="file" id="photo" accept="image/*" #fileInput style="display: none;">
+                                          <div class="image-preview-box" *ngIf="base64Image; else uploadPrompt">
+                                              <img [src]="base64Image" alt="Uploaded Image" class="responsive-image circular-image" />
+                                          </div>
+                                          <ng-template #uploadPrompt>
+                                              <p>Upload Image Or Drag</p>
+                                          </ng-template>
+                                      </div>
+                                      <div class="button-container mt-2" *ngIf="base64Image">
+                                          <div class="row g-0">
+                                              <div class="col p-0">
+                                                  <i style="font-size: large;" class="bi bi-trash-fill click-icon" (click)="clearImage()" title="Delete Image"></i>
+                                              </div>
+                                              <div class="col p-0">
+                                                  <i style="font-size: large;" class="bi bi-upload click-icon" (click)="fileInput.click()" title="Upload New"></i>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <!-- Column for form inputs -->
+                                  <div class="col-md-8">
+                                      <div class="row">
+                                          <!-- First two input fields (Name and Gender) -->
+                                          <div class="col-md-6 mb-3">
+                                              <label for="name" class="form-label"><span>*</span>Name</label>
+                                              <div class="input-group">
+                                                  <span class="input-group-text"><i class="bi bi-person icon-color"></i></span>
+                                                  <input type="text" class="form-control" formControlName="name" id="name" placeholder="Enter your name">
+                                              </div>
+                                              <div *ngIf="isInvalid('name')">
+                                                  <span *ngIf="BusinessCardEditForm.get('name')?.hasError('required')">
+                                                      Name is required.
+                                                  </span>
+                                              </div>
+                                          </div>
+                                          <div class="col-md-6 mb-3">
+                                              <label for="gender" class="form-label"><span>*</span>Gender</label>
+                                              <div class="input-group">
+                                                  <span class="input-group-text"><i class="bi bi-gender-ambiguous icon-color"></i></span>
+                                                  <select class="form-select" id="gender" formControlName="gender">
+                                                      <option value="">Select gender</option>
+                                                      <option value="male">Male</option>
+                                                      <option value="female">Female</option>
+                                                  </select>
+                                              </div>
+                                              <div *ngIf="isInvalid('gender')">
+                                                  <span *ngIf="BusinessCardEditForm.get('gender')?.hasError('required')">
+                                                      Gender is required.
+                                                  </span>
+                                              </div>
+                                          </div>
+                                      </div>
+
+                                      <div class="row">
+                                          <!-- Second two input fields (Date of Birth and Email) -->
+                                          <div class="col-md-6 mb-3">
+                                              <label for="birthdate" class="form-label"><span>*</span>Date of Birth</label>
+                                              <div class="input-group">
+                                                  <span class="input-group-text"><i class="bi bi-calendar icon-color"></i></span>
+                                                  <input type="date" formControlName="dob" class="form-control" id="birthdate" [max]="maxDate" [min]="minDate" >
+                                                  
+                                              </div>
+                                              <div *ngIf="isInvalid('dob')">
+                                                  <span *ngIf="BusinessCardEditForm.get('dob')?.hasError('required')">
+                                                      Date Of Birth is required.
+                                                  </span>
+                                              </div>
+                                          </div>
+                                          <div class="col-md-6 mb-3">
+                                              <label for="email" class="form-label"><span>*</span>Email</label>
+                                              <div class="input-group">
+                                                  <span class="input-group-text"><i class="bi bi-envelope icon-color"></i></span>
+                                                  <input type="email" formControlName="email" class="form-control" id="email" placeholder="Enter your email">
+                                              </div>
+                                              <div *ngIf="isInvalid('email')">
+                                                  <span *ngIf="BusinessCardEditForm.get('email')?.hasError('required')">
+                                                      Email is required.
+                                                  </span>
+                                                  <span *ngIf="BusinessCardEditForm.get('email')?.hasError('email')">
+                                                      Please enter a valid email.
+                                                  </span>
+                                              </div>
+                                          </div>
+                                      </div>
+
+                                      <div class="row">
+                                          <!-- Phone and Address fields -->
+                                          <div class="col-md-6 mb-3">
+                                              <label for="phone" class="form-label"><span>*</span>Phone Number</label>
+                                              <div class="input-group">
+                                                  <span class="input-group-text"><i class="bi bi-phone icon-color"></i></span>
+                                                  <input type="tel" formControlName="phone" class="form-control" id="phone" placeholder="Enter your phone number">
+                                              </div>
+                                              <div *ngIf="isInvalid('phone')">
+                                                  <span *ngIf="BusinessCardEditForm.get('phone')?.hasError('required')">
+                                                      Phone Number is required.
+                                                  </span>
+                                                  <span *ngIf="BusinessCardEditForm.get('phone')?.errors?.['minlength']">
+                                                      Please Add Phone Number Success
+                                                  </span>
+                                              </div>
+                                          </div>
+
+                                          <div class="col-md-6 mb-3">
+                                              <label for="address" class="form-label"><span>*</span>Address</label>
+                                              <div class="input-group">
+                                                  <span class="input-group-text"><i class="bi bi-house icon-color"></i></span>
+                                                  <textarea formControlName="address" class="form-control" id="address" rows="3" placeholder="Enter your address"></textarea>
+                                              </div>
+                                              <div *ngIf="isInvalid('address')">
+                                                  <span *ngIf="BusinessCardEditForm.get('address')?.hasError('required')">
+                                                      Address is required.
+                                                  </span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </form>
+                      </div>
+                      <!--form-->
+                  </div>
+
+                  
+              </div>
+              <div class="d-flex justify-content-end mt-2">
+                      <button type="button" class="btn btn-primary me-2" (click)="onSubmit()">Edit</button>
+                      <button type="reset" class="btn btn-danger me-2" (click)="onClear()">Clear</button>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+          </div>
+      </div>
+  </div>
+</div>
