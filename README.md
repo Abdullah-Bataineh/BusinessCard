@@ -79,7 +79,7 @@ If you already have the required software installed, ensure they are updated to 
    - If **both** are provided, it uses **SQL Server Authentication**.
    - If **neither** are provided, it defaults to **Windows Authentication** with `Trusted_Connection=True`.
 
-4- Please change the connection string in the appsettings file to the corresponding one (local db / remote db).
+4. Please change the connection string in the appsettings file to the corresponding one (local db / remote db).
 - <span style="color:#03e3fc; font-size:22px;">**Visual Studio**</span>: 
 1. Open Visual Studio.
 2. Go to **File** > **Open** > **Folder...** and select the project folder, or right-click the folder and choose **Open in Visual Studio**.
