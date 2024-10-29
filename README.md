@@ -121,7 +121,7 @@ SELECT @ConnectionString AS ConnectionString;
 5. Click with Tools in tool bar in visual studio and click with  **Nuget Package Manager** and click **Package Manager Console** with open command 
 write the command this 
    - ``dotnet ef migrations add InitialCreat --project "BusinessCardAPI\BusinessCardApi.csproj"``.
-   - with finish Migration write this command ``dotnet ef database update --project "BusinessCardApi\BusinessCardApi.csproj"`` this create table in database and cretate Migrations File in project.
+   - with finish Migration write this command ``dotnet ef database update --project "BusinessCardApi\BusinessCardApi.csproj"`` this create table in database and create Migrations File in project.
 
 6. in the end Run This Projects click **ctrl+F5** or **Run Icon**
 
