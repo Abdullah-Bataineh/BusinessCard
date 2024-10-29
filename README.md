@@ -75,8 +75,8 @@ If you already have the required software installed, ensure they are updated to 
 - **SSMS**: Create Database and extract the connection string and set the link in the API project.
 1. Use the query to get the connection string, taking into account the input so that it includes userid, password if you need them to log in to the server.
 2. The script checks if a `User ID` and `Password` are provided:
-- If **both** are provided, it uses **SQL Server Authentication**.
-- If **neither** are provided, it defaults to **Windows Authentication** with `Trusted_Connection=True`.
+  - If **both** are provided, it uses **SQL Server Authentication**.
+  - If **neither** are provided, it defaults to **Windows Authentication** with `Trusted_Connection=True`.
 
 ```sql
 DECLARE @ServerName NVARCHAR(128) = @@SERVERNAME;
