@@ -76,8 +76,8 @@ If you already have the required software installed, ensure they are updated to 
 1. Create Database and extract the connection string and set the link in the API project.
 2. Use the query to get the connection string, taking into account the input so that it includes userid, password if you need them to log in to the server.
 3. The script checks if a `User ID` and `Password` are provided:
-  - If **both** are provided, it uses **SQL Server Authentication**.
-  - If **neither** are provided, it defaults to **Windows Authentication** with `Trusted_Connection=True`.
+   - If **both** are provided, it uses **SQL Server Authentication**.
+   - If **neither** are provided, it defaults to **Windows Authentication** with `Trusted_Connection=True`.
 
 ```sql
 DECLARE @ServerName NVARCHAR(128) = @@SERVERNAME;
@@ -143,7 +143,7 @@ write the command this
 
 For any questions or support, please feel free to reach out:
 
-- **Email**: [abdtawil25@gmail.com](mailto:abdtawil25@gmail.com)
+- **Email**: [abdtawil25@gmail.com)](mailto:abdtawil25@gmail.com)
 - **Phone**: +962795072791
 - **LinkedIn**: [linkedin](https://linkedin.com/in/abdullabataineh/)
 - **GitHub**: [github](https://github.com/Abdullah-Bataineh)
