@@ -72,9 +72,10 @@ If this is the first time installing the required software, follow these steps:
 
 If you already have the required software installed, ensure they are updated to the latest versions:
 
-- <span style="color:red">**SSMS**</span>: Create Database and extract the connection string and set the link in the API project.
-1. Use the query to get the connection string, taking into account the input so that it includes userid, password if you need them to log in to the server.
-2. The script checks if a `User ID` and `Password` are provided:
+- <span style="color:#03e3fc; font-size:22px;">**SSMS**</span> : 
+1. Create Database and extract the connection string and set the link in the API project.
+2. Use the query to get the connection string, taking into account the input so that it includes userid, password if you need them to log in to the server.
+3. The script checks if a `User ID` and `Password` are provided:
   - If **both** are provided, it uses **SQL Server Authentication**.
   - If **neither** are provided, it defaults to **Windows Authentication** with `Trusted_Connection=True`.
 
@@ -99,7 +100,7 @@ END
 
 SELECT @ConnectionString AS ConnectionString;
 ```
-- **Visual Studio**: 
+- <span style="color:#03e3fc; font-size:22px;">**Visual Studio**</span>: 
 1. Open Visual Studio.
 2. Go to **File** > **Open** > **Folder...** and select the project folder, or right-click the folder and choose **Open in Visual Studio**.
 
@@ -126,7 +127,7 @@ write the command this
 
 6. in the end Run This Projects click **ctrl+F5** or **Run Icon**
 
-- **VS Code**: 
+- <span style="color:#03e3fc; font-size:22px;">**VS Code**</span>: 
 1. Open VS Code and go to File Project BusinessCardWeb.
 2. open terminal and check inside project
 3. add command ``npm i`` with install all packages
