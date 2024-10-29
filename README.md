@@ -79,27 +79,7 @@ If you already have the required software installed, ensure they are updated to 
    - If **both** are provided, it uses **SQL Server Authentication**.
    - If **neither** are provided, it defaults to **Windows Authentication** with `Trusted_Connection=True`.
 
-```sql
-DECLARE @ServerName NVARCHAR(128) = @@SERVERNAME;
-DECLARE @DatabaseName NVARCHAR(128) = DB_NAME();
-DECLARE @UserID NVARCHAR(128) = NULL;  -- Set to your SQL Server User ID if needed, otherwise leave NULL
-DECLARE @Password NVARCHAR(128) = NULL;  -- Set to your SQL Server Password if needed, otherwise leave NULL
-DECLARE @ConnectionString NVARCHAR(4000);
-
-IF @UserID IS NOT NULL AND @Password IS NOT NULL
-BEGIN
-    -- Use SQL Server Authentication with User ID and Password
-    SET @ConnectionString = 'Server=' + @ServerName + ';Database=' + @DatabaseName + 
-                            ';User ID=' + @UserID + ';Password=' + @Password + ';';
-END
-ELSE
-BEGIN
-    -- Use Windows Authentication (Trusted Connection)
-    SET @ConnectionString = 'Server=' + @ServerName + ';Database=' + @DatabaseName + ';Trusted_Connection=True;';
-END
-
-SELECT @ConnectionString AS ConnectionString;
-```
+4- Please change the connection string in the appsettings file to the corresponding one (local db / remote db).
 - <span style="color:#03e3fc; font-size:22px;">**Visual Studio**</span>: 
 1. Open Visual Studio.
 2. Go to **File** > **Open** > **Folder...** and select the project folder, or right-click the folder and choose **Open in Visual Studio**.
