@@ -72,7 +72,33 @@ If this is the first time installing the required software, follow these steps:
 
 If you already have the required software installed, ensure they are updated to the latest versions:
 
-- **SSMS**: extract the connection string and set the link in the API project.
+- **SSMS**: Create Database and extract the connection string and set the link in the API project.
+  1. Use the query to get the connection string, taking into account the input so that it includes userid, password if you need them to log in to the server.
+  2. The script checks if a `User ID` and `Password` are provided:
+- If **both** are provided, it uses **SQL Server Authentication**.
+- If **neither** are provided, it defaults to **Windows Authentication** with `Trusted_Connection=True`.
+
+```sql
+DECLARE @ServerName NVARCHAR(128) = @@SERVERNAME;
+DECLARE @DatabaseName NVARCHAR(128) = DB_NAME();
+DECLARE @UserID NVARCHAR(128) = NULL;  -- Set to your SQL Server User ID if needed, otherwise leave NULL
+DECLARE @Password NVARCHAR(128) = NULL;  -- Set to your SQL Server Password if needed, otherwise leave NULL
+DECLARE @ConnectionString NVARCHAR(4000);
+
+IF @UserID IS NOT NULL AND @Password IS NOT NULL
+BEGIN
+    -- Use SQL Server Authentication with User ID and Password
+    SET @ConnectionString = 'Server=' + @ServerName + ';Database=' + @DatabaseName + 
+                            ';User ID=' + @UserID + ';Password=' + @Password + ';';
+END
+ELSE
+BEGIN
+    -- Use Windows Authentication (Trusted Connection)
+    SET @ConnectionString = 'Server=' + @ServerName + ';Database=' + @DatabaseName + ';Trusted_Connection=True;';
+END
+
+SELECT @ConnectionString AS ConnectionString;
+```
 - **Visual Studio**: 
 1. Open Visual Studio.
 2. Go to **File** > **Open** > **Folder...** and select the project folder, or right-click the folder and choose **Open in Visual Studio**.
