@@ -115,15 +115,3 @@ write the command this
 
 ### 🚀 Enjoy Using the Business Card Application!
 
----
-
-## 📞 Contact
-
-For any questions or support, please feel free to reach out:
-
-- **Email**: [abdtawil25@gmail.com)](mailto:abdtawil25@gmail.com)
-- **Phone**: +962795072791
-- **LinkedIn**: [linkedin](https://linkedin.com/in/abdullabataineh/)
-- **GitHub**: [github](https://github.com/Abdullah-Bataineh)
-
-We look forward to assisting you!
